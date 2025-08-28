@@ -1,0 +1,10 @@
+[
+    {
+        "operation": "mergeVertices",
+        "paths": [],
+        "tolerance": 0.0,
+        "mergeBoundaries": true,
+        "removeIsolatedVertices": true,
+        "makeManifold": true
+    }
+]

@@ -1,0 +1,23 @@
+{
+    "convertCurves": "true",
+    "fallbackTessParamAngular": "0",
+    "fallbackTessParamChordal": "0",
+    "fallbackTessParamHoleRemovalFraction": "0",
+    "fallbackTessParamLength": "0",
+    "fallbackTessParamMaxAspect": "0",
+    "fallbackTessParamMinAngle": "0",
+    "fallbackTessParamMinEdgeLength": "0",
+    "fallbackTessParamTrimSuppress": "false",
+    "flatten": "false",
+    "instancingStyle": "0",
+    "layerFilterStyle": "1",
+    "materialType": "1",
+    "overrideTessellationGeometry": "false",
+    "overrideTessellationParameters": "false",
+    "progressLogging": "true",
+    "sOptimizeConfig": "<path to so_cad_ingest.json>", 
+    "bOptimize": "true",
+    "bConvertHidden": "false",
+    "iUpAxis": "0",
+    "dMetersPerUnit": "0.0"
+}
