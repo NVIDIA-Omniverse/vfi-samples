@@ -2,6 +2,8 @@
 
 This repository contains script samples for Virtual Facility Integration (VFI) workflows. These utilities help convert CAD data to USD and help validate, optimize, process and aggregate USD data for VFI workflows. These are companion scripts for the [VFI guide documentation](http://docs.omniverse.nvidia.com/vfi/latest/index.html).
 
+For animation-specific workflows and TimeSample Value Clip utilities, please refer to the [Animation Scripts Documentation](scripts/animation/README.md).
+
 ## Table of Contents
 - [Quick Start](#quick-start)
 - [Included Scripts](#included-scripts)
