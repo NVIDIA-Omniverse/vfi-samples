@@ -36,7 +36,7 @@ class ReferenceTimeOffsetEditor:
             "Reference Time Offset Editor initialized with relative path preservation"
         )
 
-    def _is_relative_path(path_or_url: str) -> bool:
+    def _is_relative_path(self, path_or_url: str) -> bool:
         # an empty string is the current folder
         if not path_or_url:
             return False
