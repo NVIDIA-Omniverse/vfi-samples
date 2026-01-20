@@ -55,7 +55,7 @@ CONVERTER_SCRIPT_DGN = "dgn_main.py"
 
 def create_temp_spec_with_absolute_paths(original_spec_path: str) -> str:
     """Create a temporary spec file with absolute path for sOptimizeConfig.
-    
+
     This is necessary because the JT converter requires an absolute path on disk
     for the so_cad_ingest.json optimization preset file to function properly.
     """
