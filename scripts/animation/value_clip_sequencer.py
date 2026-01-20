@@ -43,6 +43,16 @@ except ImportError:
     carb.log_error("USD Python libraries not found.")
     raise
 
+# Import additional USD types needed for clips
+try:
+    from pxr import Vt, Gf
+except ImportError:
+    carb.log_error("Could not import Vt/Gf from pxr")
+
+
+# Global instance
+_sequencer_instance = None
+
 
 class ClipEntry:
     """Represents a single clip in the sequence."""
@@ -1035,18 +1045,6 @@ class SimpleClipSequencer:
         if self._window:
             self._window.destroy()
             self._window = None
-
-
-# Import additional USD types needed for clips
-try:
-    from pxr import Vt, Gf
-except ImportError:
-    carb.log_error("Could not import Vt/Gf from pxr")
-
-
-# Global instance
-_sequencer_instance = None
-
 
 def show_window():
     """Show the Simple Clip Sequencer window."""
