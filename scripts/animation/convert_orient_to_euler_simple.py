@@ -110,6 +110,10 @@ def detect_gimbal_lock(euler_angles, order="XYZ", threshold=85.0):
     Returns:
         bool: True if near gimbal lock
     """
+    # Validate threshold to ensure margin is positive
+    if not (0 < threshold <= 90):
+        raise ValueError("threshold must be between 0 and 90 degrees")
+
     # Determine which axis is the middle rotation based on order
     if order == "XYZ":
         middle_rotation = abs(euler_angles[1])  # Y is middle
