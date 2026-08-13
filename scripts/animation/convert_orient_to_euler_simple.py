@@ -105,7 +105,8 @@ def detect_gimbal_lock(euler_angles, order="XYZ", threshold=85.0):
     Args:
         euler_angles: Gf.Vec3d of Euler angles in degrees
         order: Euler rotation order (XYZ, XZY, YXZ, ZXY)
-        threshold: Degrees from 90 to consider as near gimbal lock (default 85)
+        threshold: Gimbal lock is reported when the middle rotation is within
+            (90 - threshold) degrees of ±90 degrees (default 85).
 
     Returns:
         bool: True if near gimbal lock
