@@ -281,9 +281,6 @@ def convert_orient_to_rotateXYZ(prim, stage):
 
             # Get xformable and create rotateXYZ
             xformable = UsdGeom.Xformable(prim)
-            if not xformable:
-                return False
-
             rotate_xyz_op = xformable.AddRotateXYZOp()
             rotate_xyz_op.Set(euler_angles)
 
