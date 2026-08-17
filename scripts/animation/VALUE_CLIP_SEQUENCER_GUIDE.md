@@ -41,7 +41,7 @@ Before using the Value Clip Sequencer, ensure you have:
 ### Step 2: Open the Value Clip Sequencer
 
 1. Open the Script Editor in Omniverse
-2. Load and run `simple_clip_sequencer.py`
+2. Load and run `value_clip_sequencer.py`
 3. The **Value Clip Sequencer** window will appear
 
 ### Step 3: Select the Target Prim
