@@ -18,7 +18,6 @@ Only does the conversion - no keyframe extraction or simplification.
 import omni.usd
 from pxr import Usd, UsdGeom, Gf, Sdf
 import carb
-import math
 
 
 def quaternion_to_euler_xyz(quat):
