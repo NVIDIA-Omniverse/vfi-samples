@@ -233,14 +233,10 @@ def ensure_euler_continuity(euler_sequence):
 
         # Check each axis for discontinuities
         for axis in range(3):
-            diff = corrected[axis] - prev_euler[axis]
-
-            # If the difference is greater than 180 degrees, we have a discontinuity
-            if abs(diff) > 180:
-                if diff > 0:
-                    corrected[axis] -= 360
-                else:
-                    corrected[axis] += 360
+            # Snap the angle into the +/-180 degree range around the previous
+            # frame. The while loops below already perform the one-time
+            # 360-degree correction (and any additional wraps), so the removed
+            # if-block was redundant.
 
             # Keep angles in a consistent range relative to previous frame
             while corrected[axis] > prev_euler[axis] + 180:
