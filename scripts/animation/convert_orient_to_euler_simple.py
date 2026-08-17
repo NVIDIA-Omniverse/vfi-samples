@@ -356,7 +356,7 @@ def convert_orient_to_rotateXYZ(prim, stage):
         carb.log_warn(
             f"  ⚠️  Warning: Gimbal lock unavoidable at {len(gimbal_lock_frames)} frame(s)"
         )
-        carb.log_warn(f"     (All Euler orders have gimbal lock for these rotations)")
+        carb.log_warn("     (All Euler orders have gimbal lock for these rotations)")
         if len(gimbal_lock_frames) <= 10:
             carb.log_warn(f"     Frames: {gimbal_lock_frames[:10]}")
 
